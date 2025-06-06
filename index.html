@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gertschi.dev</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'space': ['Space Grotesk', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-white font-space min-h-screen flex items-center justify-center p-4">
+    <div class="max-w-2xl w-full">
+        <!-- Main heading with neo-brutalist styling -->
+        <div class="mb-16">
+            <h1 class="text-5xl md:text-7xl font-black text-black leading-none tracking-tight border-8 border-black p-8 bg-white shadow-[12px_12px_0px_0px_#000000] transform -rotate-1 hover:rotate-0 transition-transform duration-300">
+                you're on<br>
+                <span class="text-6xl md:text-8xl">gertschi.dev</span>
+            </h1>
+        </div>
+
+        <!-- Content blocks with brutalist styling -->
+        <div class="space-y-8">
+            <div class="border-4 border-black p-6 bg-white shadow-[8px_8px_0px_0px_#000000] transform rotate-1 hover:rotate-0 transition-transform duration-300">
+                <p class="text-xl md:text-2xl font-bold text-black leading-tight">
+                    This isn't a blog, portfolio, or a static read-only page.
+                </p>
+            </div>
+
+            <div class="border-4 border-black p-6 bg-white shadow-[8px_8px_0px_0px_#000000] transform -rotate-1 hover:rotate-0 transition-transform duration-300">
+                <p class="text-xl md:text-2xl font-bold text-black leading-tight">
+                    It's a personal workspace — a place where I build and host small tools I use myself.
+                </p>
+            </div>
+
+            <div class="border-4 border-black p-6 bg-white shadow-[8px_8px_0px_0px_#000000] transform rotate-1 hover:rotate-0 transition-transform duration-300">
+                <p class="text-xl md:text-2xl font-bold text-black leading-tight">
+                    If something here helps you too, that's a bonus. But the primary goal is solving my own problems in simple, maintainable ways.
+                </p>
+            </div>
+        </div>
+
+        <!-- Social Links -->
+        <div class="my-16 flex justify-center gap-6">
+            <a href="https://github.com/devgertschi" target="_blank" rel="noopener noreferrer" 
+               class="inline-flex items-center gap-3 border-4 border-black px-6 py-4 bg-white shadow-[6px_6px_0px_0px_#000000] transform -rotate-2 hover:rotate-0 hover:shadow-[8px_8px_0px_0px_#000000] transition-all duration-300 group">
+                <i data-lucide="github" class="w-6 h-6 group-hover:scale-110 transition-transform duration-300"></i>
+                <span class="text-lg font-bold text-black">GitHub</span>
+            </a>
+            
+            <a href="https://www.linkedin.com/in/gerhardkocher/" target="_blank" rel="noopener noreferrer"
+               class="inline-flex items-center gap-3 border-4 border-black px-6 py-4 bg-white shadow-[6px_6px_0px_0px_#000000] transform rotate-2 hover:rotate-0 hover:shadow-[8px_8px_0px_0px_#000000] transition-all duration-300 group">
+                <i data-lucide="linkedin" class="w-6 h-6 group-hover:scale-110 transition-transform duration-300"></i>
+                <span class="text-lg font-bold text-black">LinkedIn</span>
+            </a>
+        </div>
+
+        <!-- Separator with brutalist styling -->
+        <div class="my-16 flex justify-center">
+            <div class="w-32 h-2 bg-black transform rotate-12 shadow-[4px_4px_0px_0px_#000000]"></div>
+        </div>
+
+        <!-- Footer accent -->
+        <div class="text-center">
+            <div class="inline-block border-4 border-black px-8 py-4 bg-white shadow-[6px_6px_0px_0px_#000000] transform rotate-2 hover:rotate-0 transition-transform duration-300">
+                <p class="text-lg font-bold text-black">
+                    Personal Workspace
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
